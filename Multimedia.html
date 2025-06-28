@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image and Media</title>
+    <style>
+        body{
+            /* background-image: url('https://www.imageshine.in/uploads/gallery/abstract-background-wallpaper-zoom.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover; */
+
+            height: 100vh;
+            background-image: url("https://www.imageshine.in/uploads/gallery/abstract-background-wallpaper-zoom.jpg");
+            color:white;
+            padding: 25px;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: repeat;
+        }
+        .Responsive{
+            max-width: 100%;
+            height: auto;
+        }
+        .Responsive1{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .Responsive2{
+            width: 100%;
+            height: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Image</h2>
+    <img 
+    src="https://www.gislen.com/wp-content/uploads/2025/02/ARM-to-Bicep.webp" 
+    alt="A stylish red bike" 
+    width="600" 
+    height="400" 
+    title="Click to view details"
+  />
+
+
+  <!-- image with borders -->
+   <img src="https://cdn.pixabay.com/photo/2022/10/07/11/02/autumn-7504820_1280.jpg" style="border: 5px solid red;" alt="A style Image for border"  width="400" height="200">   
+  
+   <!-- image floating -->
+    <img src="https://cdn.pixabay.com/photo/2025/02/20/07/51/ai-generated-9419220_1280.png" alt="sleeping cat" style="float:right; width: 100; height: 50;">
+
+
+    <br>
+    <br>
+
+    <!-- Responsive Image -->
+     <img src="https://www.w3schools.com/howto/img_nature.jpg" alt="Image for Responsive" class="Responsive">
+
+     <br>
+
+     <img src="https://www.w3schools.com/howto/img_nature.jpg" alt="Image for Responsive" class="Responsive1">
+
+     <br>
+
+     <img src="https://www.w3schools.com/howto/img_nature.jpg" alt="Image for Responsive" class="Responsive2    ">
+
+
+     <!-- with fallback -->
+     <img 
+     src="https://www.w3schools.com/howto/img_nature.jpg" 
+     srcset="
+       https://cdn.pixabay.com/photo/2023/11/25/12/18/sea-8411640_1280.jpg 480w, 
+       https://cdn.pixabay.com/photo/2023/11/25/12/18/sea-8411640_1280.jpg 768w,
+       https://cdn.pixabay.com/photo/2025/05/14/10/09/bridge-9599215_1280.jpg 1200w
+     "
+     sizes="(max-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            600px"
+     alt="Fallback Responsive"
+     style="width: 100%; max-width: 1000px;">
+
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+        <img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+    </picture>
+
+    <!-- Plugins in HTML -->
+     <!-- object tag   -->
+      <object data="Abstract_format.pdf" type="application/pdf" width="400" height="200"></object>
+
+      <!-- Embed Tag -->
+       <embed src="Abstract_format.pdf" type="application/pdf">
+   
+</body>
+</html> 
