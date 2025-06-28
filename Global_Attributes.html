@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Attributes</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            
+        }
+
+        .link{
+            text-decoration: none;
+        
+        }
+
+        .tooltip:a{
+            color: red;
+        }
+
+        .btn{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- id and class attributes -->
+    <!-- ID (unique) -->
+    <p id="Welcome">Welcome to my Website</p>   
+
+
+    <!-- Class -->
+     <p class="highlight">This is highlighted sentence</p>
+
+
+     <!-- inline style  -->
+      <p style="color:red; text-align: center; font-size: xx-large;">Gislen Software</p>
+      <br>
+
+      <!-- Tooltip -->
+       <div class="container">
+            <div class="tooltip">
+                <a href="#" class="link" title="C3 Dotnet for Full Stack"> C# Dotnet </a>
+            </div> 
+
+            <div class="tooltip">
+                <a href="#" class="link" title="Java for Application Development"> Java </a>
+            </div> 
+
+            <div class="tooltip">
+                <a href="#" class="link" title="Network Security"> Networking </a>
+            </div> 
+       </div>
+
+       <br>
+
+       <button title="Click me to Submit" class="btn">Submit</button>
+      
+       <!-- contenteditable tag - content editing -->
+       <p contenteditable="true">Edit me!</p>
+      
+       <!-- drag and drop -->
+       <img src="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg"
+            draggable="true">
+
+        <br>
+    <!-- tabbing and focus control -->
+       <input type="text" tabindex="2">
+       <input type="text" tabindex="1">
+
+       <img src="https://stackoverflow.com/favicon.ico"
+     style="cursor:pointer;"
+     title="Stack Overflow">
+
+     <!-- it hidde the sentence -->
+     <p style="display: none;">Completely removed from layout.</p>
+
+     <!-- it not read by the screen reader -->
+     <p aria-hidden="true">Screen readers won't read me.</p>
+
+
+</body>
+</html>
