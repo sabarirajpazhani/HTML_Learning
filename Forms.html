@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <!-- <style>
+        p{
+            text-align: center;
+            margin-top: 2rem;
+            padding-bottom: 5%;
+            font-size: x-large;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 20%;
+            margin-top: -5%;
+        }
+    </style> -->
+</head>
+<body>
+    <p>Text the input fields</p>
+    <div>
+        <form action="">
+            <label for="fname">First Name:</label>  <br>
+            <input type="text" id="fname"> <br>
+            <label for="lname">Last Name:</label> <br>
+            <input type="text" id="lname">
+        </form>
+    </div>
+    
+    <div>
+        <form action="">
+            <input type="checkbox" id="cbox">
+            <label for="cbox">Mango</label>  <br>
+            <input type="radio" id="rb">
+            <label for="rb">Orange</label> <br>
+            <label for="range">Range</label> <br>
+            <input type="range" id="range">
+            <br><br>
+            <input type="submit">
+            <br>
+            <input type="button">
+
+            <input type="text" name="username">
+            <input type="file" name="profile">
+            <input type="submit" value="Upload">
+        </form>
+
+        <br>
+        <br>
+
+        <!-- dropdown and multiple selection -->
+        <select name="Country" multiple size="3">
+            <option value="india">India</option>
+            <option value="USA">USA</option>
+            <option value="Landon">Landon</option>
+        </select>
+        <br>
+
+        <!-- Hidden Fields -->
+        <input type="hidden" name="user_id" value="123">
+        <br><br><br>
+
+        <!-- Lables and filedset/legend  -->
+
+        <form action="">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fname"> First Name: </label> <br>
+                <input type="text" id="fname" placeholder="yyy"> <br>
+
+                <label for="lname">Last Name: </label> <br>
+                <input type="text" id="lname" placeholder="xxx"> <br>
+
+                <label for="Email">User Email: </label><br>
+                <input type="email" id="Email" placeholder="Email@gmail.com"><br>
+
+                <label for="Phone">Mobile Number: </label><br>
+                <input type="tel" id="Phone" placeholder="1234-56-7890" pattern="[0-9]-{4}-[0-9]{2}-{0-9}{4}" required> <br>
+
+                <label for="Age">Age: </label><br>
+                <input type="number" value="10" min="18" max="50"><br>
+            </fieldset>
+        </form>
+
+        <br>
+        <br>
+
+        <input type="date">
+        <br>
+        <input type="number" min="1" max="10" step="2">
+
+        <input type="text" inputmode="numeric" pattern="[0-9]*">
+
+        <br>
+        <br>
+        <input type="button" value="Click Me" onclick="alert('Clicked!')">
+
+
+        <br>
+        <button type="submit" disabled>Submit</button>
+
+    </div>
+    
+
+    
+</body>
+</html>
