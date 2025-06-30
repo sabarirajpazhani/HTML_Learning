@@ -209,12 +209,119 @@
 		 </select>
 
 		<hr>
-		<h2>Text inputs and areas </h2>
+
+
+		<h1>Text inputs and areas </h1>
+
+		<!-- text input with pre filled text-->
+		 <h2>text input with pre filled text</h2>
 		<form action = ''>
 			<label for = 'input'> Text something </lable>
-			<input type = 'text' id='input'>
+			<input type = 'text' id='input' value="sabari">
+		</form>
+		<br>
+		<br>
+		<!-- common text input   and validation & required filed-->
+		 <h2>Common Text input</h2>
+		<form action="">
+			<label for="cname">Name: </label>
+			<input type="text" id="cname"> <br><br>
+
+			<label for="cemail">Email: </label>   
+			<input type="email" id="cemail" required> <br><br>
+
+			<label for="pass">Password</label>
+			<input type="password" id="pass" required> <br><br>
+
+			<label for="curl">Enter the URL</label>
+			<input type="url" id="curl"> <br><br>
+
+			<label for="phonenumber">Mobile No.: </label>
+			<input type="tel" id="phonenumber" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="1234-56-7890"> <br><br>
+			
+			<label for="search">Seaching</label>
+			<input type="search" id="search"> <br><br>
+
+			<label for="num">Enter the Age</label>
+			<input type="number" id="num" min="0" max="50" step="2"> <br><br>
+
+			<label for="date">Enter the date: </label>
+			<input type="date" id="date"> <br><br>
+
+			<label for="time">Enter the Time: </label>
+			<input type="time" id="time"> <br><br>
+		</form> 
+
+		<hr>
+		<!-- ----------------Radio buttons and checkboxes --------------------->
+		 <!-- radio button with default value-->
+		<h1>Radio Buttons and Checkboxes</h1>
+		<h2>Radio Button</h2>
+		<form action="">
+			<p>Enter Gender?</p>
+			<input type="radio" id="rdobtn" name="Gender" value="Female" checked>
+			<label for="rdobtn">Yes</label>
+			<input type="radio" id="rdobtn" name="Gender" value="Male">
+			<label for="">No</label>
 		</form>
 
+		<!-- Checkbox  -->
+		 <h2>Checkbox</h2>
+		 <form action="">
+			<p>Choose your fav bike</p>
+			<input type="checkbox" id="bike1">
+			<label for="bike1">Ninja H2R</label>
 
+			<input type="checkbox" id="bike2">
+			<label for="bike2">KTM</label>
+
+			<input type="checkbox" id="bike3" checked>
+			<label for="bike3">R15</label>
+
+			<input type="checkbox" id="bike4">
+			<label for="bike4">Aprilla</label>
+		 </form>	
+
+		 <!-- -----------------	Dropdowns and multiple selection -------------- -->
+		<h1>Dropdowns and multiple selection</h1>
+		<select name="country" id="country" multiple size="2">
+			<option value="India">India</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Landon">Landon</option>
+		</select>
+		<br><br>
+		<hr>
+
+		<!-- ------------File uploads and hidden fields --------------->
+		<h1>File uploads and hidden fields</h1>
+		<h2>File uplaods</h2>
+		<label for="file">Choose the File</label>
+		<input type="file" id="file" multiple>
+		<br><br>
+
+		<!-- Hidden file  -->
+		<h2>Hidden Files</h2>
+		<label for="file">Choose the File</label>
+		<input type="hidden" id="file" multiple>
+
+		<br><br>
+
+		<hr>
+
+		<!--------------Buttons and submission =------------------->
+		<h1>Buttons and submission</h1>
+		<h2>Buttons</h2>
+		<input type="button" value="Chick me!!">
+
+		<h2>submit and reset</h2>
+		<form>
+			<label for='userName'>User Name : </label> <br>
+			<input type='text' id='userName'> <br>
+			<label for = 'pass'>Password: </label> <br>
+			<input type='Password' id='pass'> <br>
+			<input type='submit' id='submit'> 
+			<input type='reset' id = 'reset'>
+		</form>
 	</body>
 </html>
