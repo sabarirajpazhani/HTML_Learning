@@ -1,0 +1,220 @@
+<doctype ! html>
+<html lang = 'en'>
+	<head> 
+		<title> HTML Layout </title>
+		<!-----------Meta tag-------->
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width:device-width, initial-scale = 1.0'>
+		<!--<style>
+			html, body{
+				height = 100%;
+				width = 100vw;
+			}
+			
+			body{
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				place-items:center;
+			}
+			
+			h2{
+				text-align: center;
+			}
+			
+			form{
+				background: #de87ab;
+				background: radial-gradient(circle, rgba(222, 135, 171, 1) 0%, rgba(110, 142, 196, 1) 95%, rgba(148, 187, 233, 1) 100%);
+				padding: 35px;
+				border-radius: 10px;
+				border: 2px solid black;
+			}
+			
+			input{
+				border: none;
+				border-radius: 3px;
+				margin-bottom: 10px;
+			}
+			
+			
+			
+		</style>-->
+	</head>
+	<body>
+		
+	
+	
+	
+	
+		<!--<h2>Login</h2>
+		
+		<form>
+			<label for='userName'>User Name : </label> <br>
+			<input type='text' id='userName'> <br>
+			<label for = 'pass'>Password: </label> <br>
+			<input type='Password' id='pass'> <br>
+			<input type='submit' id='submit'> 
+			<input type='reset' id = 'reset'>
+		</form> -->
+		
+		
+		<!-- -------------1. Creating Forms---------------------->
+		<h2> Creating Forms</h2>
+		<form>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+		
+		<hr>
+		
+		<!-- ----------------Attributes used in forms----------------- -->
+		<h2> Forms Attributes</h2>
+		<!-- Action Attribute -->
+		<h3>ACTIONS</h3>
+		<form action='Links.html'>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+
+		<!-- target attribute -->
+		<h3>TARGET</h3>
+		<form action='Links.html' target='_self'>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+		
+		<!-- Method attribute -->
+		<h3> Methods </h3>
+		<form action='Links.html' target='_self' method ='get'>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+	
+		<!-- Encoded type  -->
+		<h3> Enctype Attribute </h3>
+		<h4> for text </h4>
+		<form action='Links.html' target='_self' method ='get' enctype = 'application/x-www-form-urlencoded'>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+		
+		<!-- autocomplete -->
+		<h3> Auto complete </h3>
+		<form action='Links.html' target='_self' method ='get' enctype = 'application/x-www-form-urlencoded' autocomplete='on'>
+			<label for = 'userName'> UserName : </label> <br>
+			<input type='text' id='userName'> <br> <br>
+			<label for = 'pass'> Password: </label> <br>
+			<input type='password' id='pass'>
+		</form>
+		
+		<!-- Novalidation attribute -->
+		<h3> Novalidate attributes</h3>
+		<form action='Links.html' method = 'post' novalidate>
+			<label for = 'useremail'> User Email : </label> <br>
+			<input type='Email' id='useremail'> <br> <br>
+		</form>
+		
+		<hr>
+
+		<!---------------- Forms Elements ----------------------->
+		<!-- input tag -->
+		 <h1>Forms Elements</h1>
+
+		 <h2>Input tag</h2>
+		 <input type="text" id="username" name = 'username' placeholder="Enter the user name">
+		 <br>
+
+		 <!-- label tag -->
+		 <h2>Label Tag</h2>
+		 <label for="name">user Name: </label>
+		 <input type="text" id="name">
+		 <br>
+
+		 <!-- select and option tag -->
+		<h2>Select and option tag</h2>
+		<select name="fruits" id="fruits">
+			<option value="Orange">Orange</option>	
+			<option value="Apple">Apple</option>
+			<option value="Goa" selected>Goa</option>
+			<option value="Mango">Mango</option>
+		</select>
+
+		<!-- textarea tag -->
+		<h2>Textarea tag</h2>
+		<label for="multitext">Enter Your Feedback</label> <br>
+		<textarea type='message' name="mltitext" id="multitext" rows="10" cols="20" readonly>Gislen Software</textarea>
+
+		<!-- button tag -->
+		<h2>Button Tag</h2>
+		<button type="button" onclick='alert("Welcome to the website")'>Click me!!</button>
+
+		<!-- Fieldset and legend Tag -->
+		<h2>Fieldset and legend Tag </h2>
+		<fieldset>
+			<legend>Contact info</legend>
+
+			<label for="UserName">User Name : </label> <br>
+			<input type="Text" id="UserName"> <br>
+
+			<label for="email">User Email: </label> <br>
+			<input type="email" id="email"> <br>
+
+			<label for="phone">Phone Number: </label>
+			<input type="tel" id="phone">
+		</fieldset>
+
+		<!-- datalist tag -->
+		<h2>DataList Tag</h2>
+			<form action="">
+			<label for="cars">Enter the Car Name: </label> <br>
+			<input list="cars" name="cars"> 
+			<datalist id="cars">
+				<option value="Lamborghini">
+				<option value="BMW">
+				<option value="Ferrari">
+			</datalist>
+		</form>
+
+		<!-- Output tag -->
+		<h2>Output tag</h2>
+		<form action="" oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+			<input type="number" id="a" name="a">
+			+
+			<input type="number" id="b" name="b">
+			=
+			<output  name="x" for="a b"></output>
+		</form>	
+
+		<!-- Optgroup tag -->
+		 <h2>optgroup tag</h2>
+		 <select name="items" id="items">
+			<optgroup label="Bike">
+				<option value="Ninja H2R">Ninja H2R</option>
+				<option value="Aprilla">Aprilla</option>
+			</optgroup>
+			<optgroup label="Cars"> 
+				<option value="BMW">BMW</option>
+				<option value="Rolls Royes">Rolls Royes</option>
+			</optgroup>
+		 </select>
+
+		<hr>
+		<h2>Text inputs and areas </h2>
+		<form action = ''>
+			<label for = 'input'> Text something </lable>
+			<input type = 'text' id='input'>
+		</form>
+
+
+	</body>
+</html>
