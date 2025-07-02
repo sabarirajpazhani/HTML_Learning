@@ -1,0 +1,33 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Content in html</title>
+  </head>
+  <body>
+    <iframe
+      src="https://www.youtube.com/embed/5oH9Nr3bKfw"
+      frameborder="1"
+      width="600"
+      height="400"
+      allowfullscreen
+      sandbox=""
+    ></iframe>
+    <br><br>
+    <embed src="./Assets/Video1.mp4" type="video/mp4" loop>
+        <br><br>
+    <object data="Abstract_format.pdf" type="application/pdf"></object>
+
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+
+    <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 20, 100, 50);
+    </script>
+
+  </body>
+</html>
