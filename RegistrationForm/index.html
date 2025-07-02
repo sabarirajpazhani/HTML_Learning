@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Forms</title>
+  </head>
+  <body>
+    <h1 style="border: 2px solid black; text-align: center">
+      Registration Form
+    </h1>
+    <div>
+      <fieldset>
+        <legend>Registration Form</legend>
+        <form action="">
+          <!-- full name  -->
+          <label for="fname"><b>Full Name : </b></label> <br />
+          <input
+            type="text"
+            id="fname"
+            placeholder="Enter the Full name"
+            required
+          />
+          <br />
+          <br />
+
+          <!-- Email -->
+          <label for="useremail"><b>User Email : </b></label> <br />
+          <input
+            type="email"
+            id="useremail"
+            placeholder="example@gmail.com"
+            required
+            autocomplete="on"
+            inputmode="email"
+          /><br />
+          <br />
+
+          <!-- Password -->
+          <label for="pass"><b>Password : </b></label> <br />
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9]).{8,}$"
+            placeholder="********"
+          />
+          <br /><br />
+
+          <!-- Gender -->
+          <label for="genders"><b>Gender : </b></label> <br />
+          <input type="radio" id="male" name="genders" />
+          <label for="gender">Male</label><br />
+          <input type="radio" id="female" name="genders" />
+          <label for="gender">Female</label>
+          <input type="radio" id="others" name="genders" checked />
+          <label for="gender">Others</label>
+          <br /><br />
+
+          <!-- Skills -->
+          <p><b>Mark the Skills : </b></p>
+          <input type="checkbox" id="skill1" checked />
+          <label for="Skill1">C#</label>
+          <input type="checkbox" id="skill2" />
+          <label for="Skill" id="skill2">Java</label> <br />
+          <input type="checkbox" id="skill3" />
+          <label for="Skill" id="skill3">Full statck</label>
+          <input type="checkbox" id="skill4" />
+          <label for="Skill" id="skill4">App Development</label><br />
+          <input type="checkbox" id="skill5" />
+          <label for="Skill" id="skill5">Cloud Management</label>
+          <input type="checkbox" id="skill6" />
+          <label for="Skill" id="skill6">AIML</label><br />
+          <input type="checkbox" id="skill7" />
+          <label for="Skill" id="skill7">Ethical Hacking</label>
+          <input type="checkbox" id="skill8" />
+          <label for="Skill" id="skill8">Testing</label>
+          <br /><br />
+
+          <!-- Country -->
+          <label><b>Select the Country : </b></label> <br />
+          <select name="Country" id="countries">
+            <option value="India">India</option>
+            <option value="Sweden" selected>Sweden</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Russia">Russia</option></select
+          ><br /><br />
+
+          <!-- DOB -->
+          <label for="dob"><b>Enter you DOB : </b></label><br />
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <!-- joining date and time  -->
+          <label for="datelocal"><b>Joining Date and Time : </b></label><br />
+          <input type="datetime-local" id="datelocal" name="date" />
+          <br /><br />
+
+          <!-- Profile image  -->
+          <label for="Profile"><b>Update your Image for Profile : </b></label>
+          <br />
+          <input
+            type="file"
+            id="Profile"
+            accept="image/*"
+            name="profileimage"
+            multiple
+            size="2"
+            capture ="User"
+            required
+          />
+          <br /><br />
+
+          <!-- image based submition -->
+          <label for="imgsub"><b>Click the image for save</b></label> <br />
+          <input
+            type="image"
+            id="imgsub"
+            src="../Assets/button.jpg"
+            alt="save image"
+            width="100"
+          />
+          <br /><br />
+
+          <!-- Feedback about the Company -->
+          <label for="Feedback"><b>Feedback about the company: </b></label
+          ><br />
+          <textarea
+            name="fdb"
+            id="Feedback"
+            rows="5"
+            cols="20"
+            placeholder="Write the Feedback"
+            spellcheck="true"
+          ></textarea
+          ><br /><br />
+
+          <!-- Phone Number -->
+          <label for="phonenumber"><b>Mobile Number : </b></label><br />
+          <input
+            type="tel"
+            id="phonenumber"
+            pattern="[0-9]{10}"
+            required
+            placeholder="+1234567890"
+            inputmode="numeric"
+          />
+          <br /><br />
+
+          <!-- Enter you Social media Link  -->
+          <label for="url"><b>Enter you Social media Link : </b></label><br />
+          <input type="url" placeholder="https://example.com" /><br /><br />
+
+          <!-- Rating -->
+          <label for="rating"><b>Raing : </b></label><br />
+          <input type="range" value="5" min="0" max="10" id="rating" />
+          <br /><br />
+
+          <!-- Searching -->
+          <label for="SearchAreaName"><b>Search Area Name : </b></label><br />
+          <input type="search" id="SearchAreaName" placeholder="Enter Area" />
+          <br /><br />
+
+          <label for="Status"><b>Your Profile status : </b></label>
+          <meter value="7" min="0" max="10"></meter>
+          <progress value="8" max="10"></progress> <br /><br />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
