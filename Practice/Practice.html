@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
     <noscript>Your Browser can not support the script</noscript>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -12,7 +19,7 @@
         <tr>
           <td>
             <img
-              src="../03-07-2025/Assests/Image1.jpg"
+              src="../04-07-2025/Assests/Image1.jpg"
               alt="Image 1"
               width="600"
             />
@@ -25,7 +32,7 @@
           </td>
           <td>
             <img
-              src="../03-07-2025/Assests/Image1.jpg"
+              src="../04-07-2025/Assests/Image1.jpg"
               alt="Image 2"
               width="600"
             />
@@ -38,7 +45,7 @@
           </td>
           <td>
             <img
-              src="../03-07-2025/Assests/Image1.jpg"
+              src="../04-07-2025/Assests/Image1.jpg"
               alt="Image 3"
               width="600"
             />
@@ -75,9 +82,9 @@
       <!-- a tag -->
       <!-- download attribute  -->
       <h2>Download Attributes</h2>
-      <a href="/03-07-2025/Assests/Image2.svg" download>
+      <a href="/04-07-2025/Assests/Image2.svg" download>
         <img
-          src="/03-07-2025/Assests/Image2.svg"
+          src="/04-07-2025/Assests/Image2.svg"
           alt="W3Schools"
           width="104"
           height="142"
@@ -109,7 +116,7 @@
     <!-- Audio  -->
     <!-- Note: controlist is not support for all the browser -->
     <audio
-      src="../03-07-2025/Assests/horse.ogv"
+      src="../04-07-2025/Assests/horse.ogv"
       controls
       controllist="nodownload"
       autoplay
@@ -164,5 +171,91 @@
       <label for="uname"></label>
       <input type="text" name="username" id="uname" />
     </form>
+    <br /><br /><br />
+    <hr />
+
+    <!-- iframe tag (allow) -->
+    <iframe
+      src="https://www.gislen.com/"
+      frameborder="0"
+      width="400"
+      height="500"
+      allow="clipboard-write;"
+      referrerpolicy="no-referrer"
+    ></iframe>
+    <br /><br /><br />
+    <iframe
+      src="https://www.youtube.com/embed/HjwN_dZXEZY?autoplay=1&control=1"
+      frameborder="0"
+      width="600"
+      height="400"
+      allow="autoplay;"
+    ></iframe>
+    <br /><br /><br />
+
+    <!-- srcdoc -->
+    <iframe
+      srcdoc="
+                  <h1>Hello World</h1>
+                  <style>
+                    h1{
+                      color:blue;
+                    }
+                  </style>
+            "
+      frameborder="0"
+    ></iframe>
+
+    <!-- table color -->
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: rgb(139, 139, 238)" />
+        <col span="2" style="background-color: aquamarine" />
+      </colgroup>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>Sabari</td>
+        <td>Sabari@gmail.com</td>
+        <td>9965652356</td>
+        <td>45000</td>
+      </tr>
+      <tr>
+        <td>Thamzh</td>
+        <td>Thamzh@gmail.com</td>
+        <td>9987876789</td>
+        <td>50000</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- finding the coordinates of the image  -->
+    <h2>Finding the coordinates of the image</h2>
+    <a href="/coordinates">
+      <img src="../03-07-2025/Assests/dear.jpg" width="600" ismap />
+    </a>
+
+    <!-- image map  -->
+    <h2>Image map</h2>
+    <img
+      src="../03-07-2025/Assests/dear.jpg"
+      usemap="#mapimage"
+      alt="default"
+      width="600"
+    />
+
+    <map name="mapimage">
+      <area
+        shape="rect"
+        coords="310,171,351,207"
+        href="brid.htm"
+        alt="bird image"
+      />
+    </map>
   </body>
 </html>
