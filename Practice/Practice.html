@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <noscript>Your Browser can not support the script</noscript>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="../03-07-2025/Assests/Image1.jpg"
+              alt="Image 1"
+              width="600"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              sint reprehenderit quas praesentium animi suscipit quasi,
+              accusamus minima amet eaque officia doloribus exercitationem
+              eligendi voluptates qui harum. Delectus, officia inventore.
+            </p>
+          </td>
+          <td>
+            <img
+              src="../03-07-2025/Assests/Image1.jpg"
+              alt="Image 2"
+              width="600"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+              illo doloremque sequi fuga quidem nulla tenetur quisquam? Facilis
+              et ea optio quos blanditiis neque nisi laudantium, rem dicta,
+              quisquam tempore.
+            </p>
+          </td>
+          <td>
+            <img
+              src="../03-07-2025/Assests/Image1.jpg"
+              alt="Image 3"
+              width="600"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+              repellat impedit corporis ipsum, aperiam nihil blanditiis, tempora
+              natus laborum quisquam nisi, libero vitae cupiditate possimus illo
+              deleniti quod dicta aspernatur.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <!-- autocapitalize (on|off|sentence|words|character) and autocorrect "on|off"(for Mobile only)-->
+      <h3>
+        autocapitalize (on|off|sentence|words|character) and autocorrect
+        "on|off"(for Mobile only)
+      </h3>
+      <h3>Give the Feedback:</h3>
+      <textarea
+        name="textarea"
+        id="txtarea"
+        plac
+        rows="10"
+        autocorrect="on"
+        autocapitalize="on"
+      ></textarea>
+      <br />
+      <br />
+      <hr />
+
+      <!-- a tag -->
+      <!-- download attribute  -->
+      <h2>Download Attributes</h2>
+      <a href="/03-07-2025/Assests/Image2.svg" download>
+        <img
+          src="/03-07-2025/Assests/Image2.svg"
+          alt="W3Schools"
+          width="104"
+          height="142"
+        />
+      </a>
+      <br />
+
+      <!-- SMS (Mobile) -->
+      <h3>sms type</h3>
+      <a href="sms:+919080378032?body=Hello%20Pravin%2C%20How%20are%20you%3F"
+        >Sent Hello to Prvain</a
+      >
+    </div>
+    <br /><br />
+    <hr />
+    <!-- popovertarget -->
+    <h3>Popover</h3>
+    <h1 popover id="pop">Hello World!!</h1>
+    <button popovertarget="pop">Click Me</button>
+    <br /><br />
+    <hr />
+
+    <!-- dialog box in open -->
+    <h3>dialog box in open</h3>
+    <dialog open>This is an open dialog window</dialog>
+    <br /><br /><br /><br /><br />
+    <hr />
+
+    <!-- Audio  -->
+    <!-- Note: controlist is not support for all the browser -->
+    <audio
+      src="../03-07-2025/Assests/horse.ogv"
+      controls
+      controllist="nodownload"
+      autoplay
+      loop
+      preload="auto"
+    ></audio>
+
+    <br /><br /><br />
+    <hr />
+
+    <!-- input and  output without having the 'Nan' falsy  -->
+    <h3>Input and output for sum of two number without the error 'Nan'</h3>
+    <form
+      oninput="x.value = (parseInt(a.value) || 0) + (parseInt(b.value) ||0)"
+    >
+      <input type="text" id="a" /> + <input type="text" id="b" /> =
+      <output name="x" for="a b">0</output>
+    </form>
+    <br /><br /><br />
+    <hr />
+
+    <!-- if i want to upload many files means my name attribute must be following formate -->
+    <h3>
+      if i want to upload many files means my name attribute must be following
+      formate
+    </h3>
+    <!-- Note: here size represent the width of the text but not the number of file -->
+    <label for="imageFile"><b>Upload the Profile Image</b></label> <br />
+    <input
+      type="file"
+      name="image[]"
+      id="imageFile"
+      accept="image/*"
+      capture="user"
+      multiple
+    />
+
+    <!-- form tag -->
+    <!-- autocapitalize is only work in the mobile not in desktop or laptop -->
+    <br />
+    <br />
+    <h3>Form</h3>
+    <form
+      action=""
+      method="Post"
+      autocapitalize="on"
+      autocomplete="on"
+      novalidate
+      target="_blank"
+      accept-charset="UTF-8"
+    >
+      <label for="uname"></label>
+      <input type="text" name="username" id="uname" />
+    </form>
+  </body>
+</html>
